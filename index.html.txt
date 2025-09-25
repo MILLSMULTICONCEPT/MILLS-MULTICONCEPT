@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MILLS MULTICONCEPT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <h1 class="logo">MILLS MULTICONCEPT</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <h2>Welcome to MILLS MULTICONCEPT</h2>
+    <p>Your trusted partner in innovative solutions.</p>
+    <button onclick="learnMore()">Learn More</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      MILLS MULTICONCEPT is a business dedicated to providing high-quality 
+      services and solutions across different industries. Our goal is to 
+      deliver excellence and build lasting relationships with our clients.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>✅ Consulting</li>
+      <li>✅ Trading</li>
+      <li>✅ Supplies</li>
+      <li>✅ Other innovative solutions</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: millsconcept@gmail.com</p>
+    <p>Phone: +234 800 000 0000</p>
+    <button onclick="contactUs()">Send a Message</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MILLS MULTICONCEPT. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
