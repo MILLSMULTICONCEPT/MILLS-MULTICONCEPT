@@ -20,30 +20,46 @@
 
   <!-- Home Section -->
   <section id="home" class="hero">
-    <h2>Welcome to MILLS MULTICONCEPT</h2>
-    <p>Your trusted partner in innovative solutions.</p>
-    <button onclick="learnMore()">Learn More</button>
+    <div class="hero-content">
+      <h2>Welcome to <span>MILLS MULTICONCEPT</span></h2>
+      <p>Your trusted partner in innovative solutions.</p>
+      <button onclick="learnMore()">Learn More</button>
+    </div>
   </section>
 
   <!-- About Section -->
   <section id="about">
     <h2>About Us</h2>
-    <p>
-      MILLS MULTICONCEPT is a business dedicated to providing high-quality 
-      services and solutions across different industries. Our goal is to 
-      deliver excellence and build lasting relationships with our clients.
-    </p>
+    <div class="about-container">
+      <img src="images/about.jpg" alt="About Us">
+      <p>
+        MILLS MULTICONCEPT is dedicated to providing high-quality 
+        services across consulting, trading, and supplies. 
+        We deliver excellence and build lasting relationships with clients.
+      </p>
+    </div>
   </section>
 
   <!-- Services Section -->
   <section id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>✅ Consulting</li>
-      <li>✅ Trading</li>
-      <li>✅ Supplies</li>
-      <li>✅ Other innovative solutions</li>
-    </ul>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="images/service1.jpg" alt="Consulting">
+        <h3>Consulting</h3>
+        <p>Expert business strategies to help you grow.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service2.jpg" alt="Trading">
+        <h3>Trading</h3>
+        <p>Reliable trading and supply chain solutions.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service3.jpg" alt="Supplies">
+        <h3>Supplies</h3>
+        <p>Quality supplies tailored to your needs.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
@@ -51,15 +67,19 @@
     <h2>Contact Us</h2>
     <p>Email: millsconcept@gmail.com</p>
     <p>Phone: +234 800 000 0000</p>
-    <button onclick="contactUs()">Send a Message</button>
+    <p><a href="https://wa.me/2348000000000" target="_blank">Chat on WhatsApp</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 MILLS MULTICONCEPT. All Rights Reserved.</p>
+    <p>© 2025 MILLS MULTICONCEPT | Follow us:</p>
+    <div class="socials">
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">LinkedIn</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
-
 </html>
