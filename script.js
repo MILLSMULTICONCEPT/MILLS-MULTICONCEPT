@@ -1,7 +1,3 @@
 function learnMore() {
-  alert("MILLS MULTICONCEPT is here to serve you with innovative solutions!");
-}
-
-function contactUs() {
-  alert("Thank you for reaching out! Please send us an email at millsryke@gmail.com.");
+  window.location.href = "#about";
 }
