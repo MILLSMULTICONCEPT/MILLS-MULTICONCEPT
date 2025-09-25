@@ -39,8 +39,9 @@ nav ul li a:hover {
 }
 
 /* Hero Section */
-.hero {
-  background: url("images/MILLS-banner.jpg") no-repeat center center/cover;
+  .hero {
+  background: url("images/hero.jpg") no-repeat center center/cover;
+}
   height: 100vh;
   display: flex;
   align-items: center;
@@ -157,3 +158,4 @@ footer .socials a {
   margin: 0 10px;
   text-decoration: none;
 }
+
