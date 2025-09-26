@@ -23,17 +23,21 @@ nav .logo img {
 }
 nav ul {
   list-style: none;
+  display: flex;
+  gap: 30px;
 }
-nav ul li {
-  display: inline;
-  margin-left: 20px;
-}
+
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between icon and text */
 }
-nav ul li a:hover {
-  color: #00aced;
+
+nav ul li a img {
+  height: 20px;
+  width: 20px;
 }
 
 /* Hero Section */
@@ -165,6 +169,7 @@ footer .socials a {
   margin: 0 10px;
   text-decoration: none;
 }
+
 
 
 
