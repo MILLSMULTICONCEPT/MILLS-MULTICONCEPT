@@ -3,83 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mills Multiconcept</title>
+  <title>MILLS MULTICONCEPT</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navigation Bar -->
   <nav>
-    <div class="logo">
-      <img src="MILLS-hero.jpg" alt="Mills Concept Logo">
-    </div>
+    <h1 class="logo">MILLS MULTICONCEPT</h1>
     <ul>
-      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home">
+  <!-- Hero/Home Section -->
+  <section id="home" class="hero">
     <div class="hero-content">
-      <h1>Welcome to Mills Concept</h1>
-      <p>We deliver creativity, innovation, and excellence.</p>
-      <a href="#services" class="btn">Explore Services</a>
+      <h2>Welcome to <span>MILLS MULTICONCEPT</span></h2>
+      <p>Your trusted partner in innovative solutions.</p>
+      <button onclick="learnMore()">Learn More</button>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about">
     <h2>About Us</h2>
-    <p>This is where your About content goes...</p>
+    <div class="about-container">
+      <img src="images/MILLS-about.jpg" alt="About MILLS MULTICONCEPT">
+      <p>
+        MILLS MULTICONCEPT provides expert consulting, trading, and supply services in Nigeria. 
+        Our mission is to deliver quality solutions and build lasting relationships with our clients.
+      </p>
+    </div>
   </section>
 
   <!-- Services Section -->
   <section id="services">
     <h2>Our Services</h2>
-    <p>Details about your services go here...</p>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="images/MILLS-service1.jpg" alt="Consulting">
+        <h3>Consulting</h3>
+        <p>Expert business strategies to help you grow.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/MILLS-service2.jpg" alt="Trading">
+        <h3>Trading</h3>
+        <p>Reliable trading and supply chain solutions.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/MILLS-service3.jpg" alt="Supplies">
+        <h3>Supplies</h3>
+        <p>Quality supplies tailored to your needs.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Contact information goes here...</p>
+    <p>Email: <a href="mailto:millsryke@gmail.com">millsryke@gmail.com</a></p>
+    <p>Phone: <a href="tel:+2348112860180">+234 811 286 0180</a></p>
+    <p>
+      <a class="whatsapp-btn" href="https://wa.me/2348112860180" target="_blank">
+        Chat with us on WhatsApp
+      </a>
+    </p>
   </section>
 
-  <!-- Smooth Scroll Script -->
-  <script>
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth"
-        });
-      });
-    });
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MILLS MULTICONCEPT | Follow us:</p>
+    <div class="socials">
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
 
-    // Highlight active link on scroll
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("nav ul li a");
-
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 80;
-        if (pageYOffset >= sectionTop) {
-          current = section.getAttribute("id");
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-          link.classList.add("active");
-        }
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
