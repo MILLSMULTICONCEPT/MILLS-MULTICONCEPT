@@ -3,104 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MILLS MULTICONCEPT</title>
+  <title>Mills Multiconcept</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav>
-  <div class="logo">
-    <img src="MILLS-hero.jpg" alt="Mills Concept Logo">
-  </div>
-  <nav>
-  <ul>
-    <li><a href="#home"><img src="home-icon.png" alt=""> Home</a></li>
-    <li><a href="#about"><img src="about-icon.png" alt=""> About</a></li>
-    <li><a href="#services"><img src="service-icon.png" alt=""> Services</a></li>
-    <li><a href="#contact"><img src="contact-icon.png" alt=""> Contact</a></li>
-  </ul>
-</nav>
-    <h1 class="logo">MILLS MULTICONCEPT</h1>
+    <div class="logo">
+      <img src="MILLS-hero.jpg" alt="Mills Concept Logo">
+    </div>
     <ul>
-      <li><a href="#home">Home</a></li>
+      <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero/Home Section -->
-  <section id="home"
-    <div class="home-content">
-      <h2>Welcome to <span>MILLS MULTICONCEPT</span></h2>
-      <p>Your trusted partner in innovative solutions.</p>
-    </div>
-      <img src="MILLS-hero.jpg" alt="Mills concept">
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="hero-content">
+      <h1>Welcome to Mills Concept</h1>
+      <p>We deliver creativity, innovation, and excellence.</p>
+      <a href="#services" class="btn">Explore Services</a>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about">
     <h2>About Us</h2>
-    <div class="about-container">
-      <img src="MILLS-about.jpg" alt="About MILLS MULTICONCEPT">
-      <p>
-        MILLS MULTICONCEPT provides expert consulting, trading, and supply services in Nigeria. 
-        Our mission is to deliver quality solutions and build lasting relationships with our clients.
-      </p>
-    </div>
+    <p>This is where your About content goes...</p>
   </section>
 
   <!-- Services Section -->
   <section id="services">
     <h2>Our Services</h2>
-    <div class="services-container">
-      <div class="service-card">
-        <img src="MILLS-service1.jpg" alt="Consulting">
-        <h3>Consulting</h3>
-        <p>Expert business strategies to help you grow.</p>
-      </div>
-      <div class="service-card">
-        <img src="MILLS-service2.jpg" alt="Trading">
-        <h3>Trading</h3>
-        <p>Reliable trading and supply chain solutions.</p>
-      </div>
-      <div class="service-card">
-        <img src="MILLS-service3.jpg" alt="Supplies">
-        <h3>Supplies</h3>
-        <p>Quality supplies tailored to your needs.</p>
-      </div>
-    </div>
+    <p>Details about your services go here...</p>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:millsryke@gmail.com">millsryke@gmail.com</a></p>
-    <p>Phone: <a href="tel:+2348112860180">+234 811 286 0180</a></p>
-    <p>
-      <a class="whatsapp-btn" href="https://wa.me/2348112860180" target="_blank">
-        Chat with us on WhatsApp
-      </a>
-    </p>
+    <p>Contact information goes here...</p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 MILLS MULTICONCEPT | Follow us:</p>
-    <div class="socials">
-      <a href="#">Facebook</Rykemiills> | 
-      <a href="#">Instagram</mills concept> | 
-      <a href="#">LinkedIn</not available>
-    </div>
-  </footer>
+  <!-- Smooth Scroll Script -->
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
 
-  <script src="script.js"></script>
+    // Highlight active link on scroll
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
