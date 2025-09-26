@@ -12,16 +12,14 @@ body {
 /* Navbar */
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: #222;
-  padding: 15px 30px;
-  position: sticky;
-  top: 0;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background: #111;  /* navbar color */
 }
-nav .logo {
-  color: #fff;
-  font-size: 20px;
+
+nav .logo img {
+  height: 50px;  /* adjust size */
 }
 nav ul {
   list-style: none;
@@ -167,6 +165,7 @@ footer .socials a {
   margin: 0 10px;
   text-decoration: none;
 }
+
 
 
 
